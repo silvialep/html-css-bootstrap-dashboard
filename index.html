@@ -52,11 +52,11 @@
         </nav>
 
         <section class="w-100 h-100 overflow-y-auto">
-            <div class="__blue-top-bar container-fluid py-3 d-flex gap-4 flex-column flex-sm-row-reverse align-items-start gap-3 flex-wrap justify-content-between text-white">
+            <div class="__blue-top-bar container-fluid py-3 d-flex gap-4 flex-column flex-md-row-reverse align-items-start gap-3 justify-content-between text-white">
                 <div class="d-flex gap-4 align-items-center px-lg-5">
                     <span>Nuovo studente</span>
                     <button class="btn text-white border-2 border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
-                        aria-controls="offcanvasScrolling"><span class="__inside-button">+</span></button>
+                        aria-controls="offcanvasScrolling"><span class="__inside-button"><i class="fa-solid fa-plus"></i></span></button>
                     
                     <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
                         id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
@@ -107,15 +107,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="__first-tag d-flex flex-column flex-sm-row justify-content-between align-items-center flex-grow-1">
-                    <div style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#" class="text-white">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Library</li>
-                        </ol>
-                    </div>
+                <div class="__first-tag d-flex flex-column flex-md-row justify-content-between align-items-center flex-sm-wrap flex-md-nowrap flex-grow-1">
                     <div>
-                        studenti online
+                        <h2 class="d-inline-block">Boolean</h2>
+                        <span class="badge">Piano blaze</span>
+                        <div style="--bs-breadcrumb-divider: ''; " aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item badge">3 app</li>
+                                <li><i class="fa-solid fa-angles-right px-1"></i></li>
+                                <li class="breadcrumb-item badge">Boolean mobile app</li>
+                                <li class="breadcrumb-item badge">Boolean web app</li>
+                                <li class="breadcrumb-item badge">Boolean blog app</li>
+                            </ol>
+                        </div>
+                        
+                    </div>
+                    <div class="d-flex flex-column gap-2 align-self-start">
+                        <span class="">Studenti online negli ultimi 30 minuti</span>
+                        <span class="fs-2">125</span>
+
                     </div>
 
                 </div>
@@ -128,20 +138,20 @@
                             <h5 class="fw-bold bg-body-tertiary p-2 border-bottom">Prossime classi</h5>
                             <table class="table">
                                 <thead>
-                                    <th scope="col" class="col-6">Nome</th>
+                                    <th scope="col" class="col-5">Nome</th>
                                     <th scope="col" class="d-none d-sm-table-cell text-center">Data inizio</th>
-                                    <th scope="col" class="d-none d-sm-table-cell">ROI</th>
-                                    <th scope="col">Stato</th>
-                                    <th scope="col">Azioni</th>
+                                    <th scope="col" class="d-none d-sm-table-cell text-center">ROI</th>
+                                    <th scope="col" class="text-center">Stato</th>
+                                    <th scope="col" class="text-center">Azioni</th>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td><i class="fa-solid fa-code border rounded-circle p-1 bg-danger bg-opacity-75 text-white"></i>
                                         Classe 75</td>
                                         <td class="d-none d-sm-table-cell text-center">15 Feb 2021</td>
-                                        <td class="d-none d-sm-table-cell">20%</td>
-                                        <td><span class="badge bg-success">Done</span></td>
-                                        <td>
+                                        <td class="d-none d-sm-table-cell text-center">20%</td>
+                                        <td class="text-center"><span class="badge bg-success">Done</span></td>
+                                        <td class="text-center">
                                             <i class="fa-solid fa-pen border rounded-1 p-2"></i>
                                             <i class="fa-solid fa-trash border rounded-1 p-2"></i>
                                         </td>
@@ -149,31 +159,79 @@
                                     <tr>
                                         <td><i class="fa-solid fa-code border rounded-circle p-1 bg-danger bg-opacity-75 text-white"></i>
                                         Classe 76</td>
-                                        <td></td>
+                                        <td class="d-none d-sm-table-cell text-center">16 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell text-center">20%</td>
+                                        <td class="text-center"><span class="badge bg-success">Done</span></td>
+                                        <td class="text-center">
+                                            <i class="fa-solid fa-pen border rounded-1 p-2"></i>
+                                            <i class="fa-solid fa-trash border rounded-1 p-2"></i>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td><i class="fa-solid fa-code border rounded-circle p-1 bg-danger bg-opacity-75 text-white"></i>
                                         Classe 77</td>
+                                        <td class="d-none d-sm-table-cell text-center">17 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell text-center">20%</td>
+                                        <td class="text-center"><span class="badge bg-warning">process</span></td>
+                                        <td class="text-center">
+                                            <i class="fa-solid fa-pen border rounded-1 p-2"></i>
+                                            <i class="fa-solid fa-trash border rounded-1 p-2"></i>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td><i class="fa-solid fa-code border rounded-circle p-1 bg-danger bg-opacity-75 text-white"></i>
                                         Classe 78</td>
+                                        <td class="d-none d-sm-table-cell text-center">18 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell text-center">20%</td>
+                                        <td class="text-center"><span class="badge bg-success">Done</span></td>
+                                        <td class="text-center">
+                                            <i class="fa-solid fa-pen border rounded-1 p-2"></i>
+                                            <i class="fa-solid fa-trash border rounded-1 p-2"></i>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td><i class="fa-solid fa-code border rounded-circle p-1 bg-danger bg-opacity-75 text-white"></i>
                                         Classe 79</td>
+                                        <td class="d-none d-sm-table-cell text-center">19 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell text-center">20%</td>
+                                        <td class="text-center"><span class="badge bg-danger">Failed</span></td>
+                                        <td class="text-center">
+                                            <i class="fa-solid fa-pen border rounded-1 p-2"></i>
+                                            <i class="fa-solid fa-trash border rounded-1 p-2"></i>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td><i class="fa-solid fa-code border rounded-circle p-1 bg-danger bg-opacity-75 text-white"></i>
                                         Classe 80</td>
+                                        <td class="d-none d-sm-table-cell text-center">20 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell text-center">20%</td>
+                                        <td class="text-center"><span class="badge bg-success">Done</span></td>
+                                        <td class="text-center">
+                                            <i class="fa-solid fa-pen border rounded-1 p-2"></i>
+                                            <i class="fa-solid fa-trash border rounded-1 p-2"></i>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td><i class="fa-solid fa-code border rounded-circle p-1 bg-danger bg-opacity-75 text-white"></i>
                                         Classe 81</td>
+                                        <td class="d-none d-sm-table-cell text-center">21 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell text-center">20%</td>
+                                        <td class="text-center"><span class="badge bg-danger">Failed</span></td>
+                                        <td class="text-center">
+                                            <i class="fa-solid fa-pen border rounded-1 p-2"></i>
+                                            <i class="fa-solid fa-trash border rounded-1 p-2"></i>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td><i class="fa-solid fa-code border rounded-circle p-1 bg-danger bg-opacity-75 text-white"></i>
                                         Classe 82</td>
+                                        <td class="d-none d-sm-table-cell text-center">22 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell text-center">20%</td>
+                                        <td class="text-center"><span class="badge bg-success">Done</span></td>
+                                        <td class="text-center">
+                                            <i class="fa-solid fa-pen border rounded-1 p-2"></i>
+                                            <i class="fa-solid fa-trash border rounded-1 p-2"></i>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>

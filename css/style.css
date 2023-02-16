@@ -67,14 +67,21 @@ nav li:hover {
 }
 
 .__inside-main-container {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 }
 
 .__my-button {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     font-weight: bold;
 }
 
+.__first-tag .badge {
+    background-color: rgb(22, 91, 186);
+}
+
+.__first-tag {
+    max-width: 1000px;
+}
 
 
 @media screen and (min-width: 992px) {
