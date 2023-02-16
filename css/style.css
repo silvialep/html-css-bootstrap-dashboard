@@ -29,6 +29,8 @@ a:hover {
 
 main {
     height: calc(100vh - 80px);
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 nav {
@@ -36,6 +38,10 @@ nav {
     height: 100%;
     background-image: url(../img/sidebar-bg.png);
     background-color: rgb(5, 30, 52);
+}
+
+nav ul {
+    list-style-type: none;
 }
 
 nav li:hover {
@@ -61,10 +67,13 @@ nav li:hover {
 }
 
 .__inside-main-container {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
 
-
+.__my-button {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
 
 
 
