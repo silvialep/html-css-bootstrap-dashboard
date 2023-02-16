@@ -9,11 +9,11 @@
 
 /* __COMMON___ */
 
-.top-bar {
+.__top-bar {
     height: 80px;
 
     /* debug */
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 main {
@@ -27,10 +27,12 @@ nav {
     background-color: rgb(5, 30, 52);
 }
 
-#main-container {
+#__main-container {
     width: calc(100% - 80px);
     height: 100%;
 
     /* debug */
     background-color:salmon;
 }
+
+

@@ -18,7 +18,23 @@
 <body>
 
     <header>
-        <section class="top-bar w-100">
+        <section class="container-fluid __top-bar w-100 d-flex gap-3 align-items-center justify-content-between">
+            <div class="h-100">
+                <img class="h-100 d-lg-none" src="img/mobile-logo.png" alt="logo boolean mobile">
+                <img class="d-none d-lg-inline-flex py-4" src="img/logo.svg" alt="logo boolean big">
+            </div>
+            <div class="search-bar w-100">
+                <button class="btn bg-body-secondary border-1 rounded-2 shadow-none p-2 w-100 d-flex justify-content-start align-items-center gap-2">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Prova a cercare: Lezioni di Laravel</span>
+                </button>
+            </div>
+            <div class="d-flex gap-2">
+                <i class="fa-solid fa-list d-none d-lg-inline-flex"></i>
+                <i class="fa-solid fa-circle-question d-none d-lg-inline-flex"></i>
+                <i class="fa-solid fa-ellipsis-vertical d-none d-lg-inline-flex"></i>
+                <i class="fa-solid fa-bell text-warning"></i>
+            </div>
 
         </section>
     </header>
@@ -28,7 +44,7 @@
             
         </nav>
 
-        <section id="main-container">
+        <section id="__main-container">
 
         </section>
 
