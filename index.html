@@ -55,7 +55,7 @@
             <div class="__blue-top-bar container-fluid py-3 d-flex gap-4 flex-column flex-md-row-reverse align-items-start gap-3 justify-content-between text-white">
                 <div class="d-flex gap-4 align-items-center px-lg-5">
                     <span>Nuovo studente</span>
-                    <button class="btn text-white border-2 border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                    <button class="btn text-white border-2 border-white __top-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
                         aria-controls="offcanvasScrolling"><span class="__inside-button"><i class="fa-solid fa-plus"></i></span></button>
                     
                     <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
@@ -64,60 +64,89 @@
                             <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Inserisci un nuovo studente</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
-                        <div class="offcanvas-body w-100">
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">@</span>
-                                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-                                    aria-describedby="basic-addon1">
-                            </div>
-                            
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
-                                    aria-describedby="basic-addon2">
-                                <span class="input-group-text" id="basic-addon2">@example.com</span>
-                            </div>
-                            
-                            <div class="mb-3">
-                                <label for="basic-url" class="form-label">Your vanity URL</label>
-                                <div class="input-group">
-                                    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-                                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        <div class="offcanvas-body">
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-12 col-md-6">
+                                        <label for="inputNome" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="inputNome">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="inputCognome" class="form-label">Cognome</label>
+                                        <input type="text" class="form-control" id="inputCognome">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="inputEmail" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="inputPassword" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="inputEmail" class="form-label">Indirizzo Email</label>
+                                        <input type="email" class="form-control" id="inputEmail">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="inputPassword" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword">
+                                    </div>
+                                    <div class="col-12 col-md-12">
+                                        <label for="inputAddress" class="form-label">Indirizzo</label>
+                                        <input type="text" class="form-control" id="inputAddress">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="inputCity" class="form-label">Città</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label for="inputState" class="form-label">Stato</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-md-2">
+                                        <label for="inputZipcode" class="form-label">CAP</label>
+                                        <input type="number" class="form-control" id="inputZipcode">
+                                    </div>
+                                    <label for="inputFile">Foto</label>
+                                    <div class="col-12 input-group mb-3">
+                                        <input type="file" class="form-control" id="inputFile">
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <label class="form-check-label" for="gridCheck">
+                                                Seleziona per proseguire
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary" type="submit">Salva</button>
+                                        <button class="btn btn-warning" type="reset">Svuota</button>
+                                    </div>
+
                                 </div>
-                                <div class="form-text">Example help text goes outside the input group.</div>
-                            </div>
-                            
-                            <div class="input-group mb-3">
-                                <span class="input-group-text">$</span>
-                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                <span class="input-group-text">.00</span>
-                            </div>
-                            
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-                                <span class="input-group-text">@</span>
-                                <input type="text" class="form-control" placeholder="Server" aria-label="Server">
-                            </div>
-                            
-                            <div class="input-group">
-                                <span class="input-group-text">With textarea</span>
-                                <textarea class="form-control" aria-label="With textarea"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+
+                                
+                            </form>
 
                         </div>
                     </div>
                 </div>
                 <div class="__first-tag d-flex flex-column flex-md-row justify-content-between align-items-center flex-sm-wrap flex-md-nowrap flex-grow-1">
-                    <div>
+                    <div class="align-self-start">
                         <h2 class="d-inline-block">Boolean</h2>
                         <span class="badge">Piano blaze</span>
                         <div style="--bs-breadcrumb-divider: ''; " aria-label="breadcrumb">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item badge">3 app</li>
+                                <li class="breadcrumb-item"><span class="badge">3 app</span></li>
                                 <li><i class="fa-solid fa-angles-right px-1"></i></li>
-                                <li class="breadcrumb-item badge">Boolean mobile app</li>
-                                <li class="breadcrumb-item badge">Boolean web app</li>
-                                <li class="breadcrumb-item badge">Boolean blog app</li>
+                                <li class="breadcrumb-item"><span class="d-md-none badge"><i class="fa-solid fa-plus"></i></span></li>
+                                <li class="breadcrumb-item"><span class="d-none d-md-inline-block badge">Boolean mobile app</span></li>
+                                <li class="breadcrumb-item"><span class="d-none d-md-inline-block badge">Boolean web app</span></li>
+                                <li class="breadcrumb-item"><span class="d-none d-md-inline-block badge">Boolean blog app</span></li>
                             </ol>
                         </div>
                         
